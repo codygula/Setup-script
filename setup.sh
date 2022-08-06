@@ -13,6 +13,9 @@ echo "Ubuntu basic setup script. Created 8/5/2022 by Cody Gula"
 # Stuff I'm using currently
 #sudo apt-get install 
 
+git config --global user.email "cgula7@gmail.com"
+git config --global user.name "Cody Gula"
+git config --global core.editor "vim"
 
 # Install VS Code
 echo "Installing VS Code"
@@ -31,8 +34,8 @@ echo "Installing Chrome"
 
 
 # Install ArcMenu
-sudo apt install chrome-gnome-shell
-sudo apt -y install gnome-shell-extension-arc-menu
+# sudo apt install chrome-gnome-shell
+# sudo apt -y install gnome-shell-extension-arc-menu
 
 # git clone https://gitlab.com/arcmenu/ArcMenu.git
 # git clone --single-branch --branch gnome-3.36/3.38 https://gitlab.com/arcmenu/ArcMenu.git
