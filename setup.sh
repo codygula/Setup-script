@@ -21,10 +21,11 @@ git config --global core.editor "vim"
 # Install VS Code
 echo "Installing VS Code"
 # Copied from internet but untested.
-apt install software-properties-common apt-transport-https wget -y
-wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
-add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
-apt install code
+# apt install software-properties-common apt-transport-https wget -y
+# wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
+# add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
+# apt install code
+bash vscodesetup.sh
 
 
 # Install Chrome
@@ -43,6 +44,11 @@ sudo dpkg -i google-chrome-stable_current_amd64.deb
 # cd ArcMenu
 # make install
 
+
+# Copy VIM .vimrc file. cp file path obviously needs to be fixed.
+mkdir -p ~/.vim ~/.vim/autoload ~/.vim/backup ~/.vim/colors ~/.vim/plugged
+touch ~/.vimrc
+cp /home/gula/Setup-script/.vimrc ~/.vimrc
 
 # install python packages
 
