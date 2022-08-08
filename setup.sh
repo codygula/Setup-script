@@ -6,7 +6,7 @@ echo "Ubuntu basic setup script. Created 8/5/2022 by Cody Gula"
 apt update && sudo apt upgrade -y
 
 # # Essential packages
-sudo apt-get install curl htop lnav vim tmux git-all cowsay python3-pip git darktable -y
+sudo apt-get install curl htop lnav vim tmux git-all cowsay python3-pip git darktable awscli -y
 
 sudo snap install postman gimp -y
 
@@ -45,15 +45,18 @@ sudo dpkg -i google-chrome-stable_current_amd64.deb
 # make install
 
 
-# Copy VIM .vimrc file. cp file path obviously needs to be fixed.
-mkdir -p ~/.vim ~/.vim/autoload ~/.vim/backup ~/.vim/colors ~/.vim/plugged
-touch ~/.vimrc
-cp /home/gula/Setup-script/.vimrc ~/.vimrc
+# Copy dot files
 
-# install python packages
+cp .vimrc ${HOME}
+cp .bashrc ${HOME}
 
 
-# clone dot files
+# TODO install python packages
+
+
+
+sudo apt upgrade -y
+sudo apt autoremove -y
 
 echo " ______                        __         __          __ "
 echo "|      |.-----.--------.-----.|  |.-----.|  |_.-----.|  | "
