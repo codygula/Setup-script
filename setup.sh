@@ -5,6 +5,8 @@ echo "Ubuntu basic setup script. Created 8/5/2022 by Cody Gula"
 
 apt update && sudo apt upgrade -y
 
+sudo apt-get update
+
 # # Essential packages
 sudo apt-get install curl htop lnav vim tmux git-all cowsay python3-pip git darktable awscli net-tools minicom -y
 
