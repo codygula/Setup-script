@@ -6,7 +6,7 @@ echo "Ubuntu basic setup script. Created 8/5/2022 by Cody Gula"
 apt update && sudo apt upgrade -y
 
 # # Essential packages
-sudo apt-get install curl htop lnav vim tmux git-all cowsay python3-pip git darktable awscli net-tools -y
+sudo apt-get install curl htop lnav vim tmux git-all cowsay python3-pip git darktable awscli net-tools minicom -y
 
 sudo snap install postman gimp -y
 
@@ -25,7 +25,7 @@ echo "Installing VS Code"
 # wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
 # add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
 # apt install code
-bash vscodesetup.sh
+# bash vscodesetup.sh
 
 
 # Install Chrome
@@ -34,6 +34,8 @@ echo "Installing Chrome"
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg -i google-chrome-stable_current_amd64.deb
 
+
+pip3 install chromaterm
 
 # Install ArcMenu
 # sudo apt install chrome-gnome-shell
@@ -52,7 +54,6 @@ cp .bashrc ${HOME}
 
 
 # TODO install python packages
-
 
 
 sudo apt upgrade -y

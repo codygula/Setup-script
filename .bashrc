@@ -119,6 +119,7 @@ fi
 # Cody Gula custom alii
 alias weather='curl wttr.in'
 alias pip='pip3'
+alias ssh='ct ssh'
 
 # History control
 # don't use duplicate lines or lines starting with space
