@@ -8,7 +8,7 @@ apt update && sudo apt upgrade -y
 sudo apt-get update
 
 # # Essential packages
-sudo apt-get install curl htop lnav vim tmux git-all cowsay python3-pip git darktable awscli net-tools minicom neofetch -y
+sudo apt-get install curl htop lnav vim tmux git-all cowsay python3-pip git darktable awscli net-tools minicom neofetch newsboat -y
 
 sudo snap install postman gimp -y
 

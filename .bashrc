@@ -120,6 +120,7 @@ fi
 alias weather='curl wttr.in'
 alias pip='pip3'
 alias ssh='ct ssh'
+alias rss='newsboat'
 
 # History control
 # don't use duplicate lines or lines starting with space
