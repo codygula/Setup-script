@@ -8,9 +8,9 @@ apt update && sudo apt upgrade -y
 sudo apt-get update
 
 # # Essential packages
-sudo apt-get install curl htop lnav vim tmux git-all cowsay python3-pip git darktable awscli net-tools minicom neofetch newsboat -y
+sudo apt-get install curl htop lnav vim tmux meld git-all cowsay python3-pip git darktable awscli net-tools minicom neofetch newsboat -y
 
-sudo snap install postman gimp -y
+sudo snap install postman gimp umbrello -y
 
 # Stuff I'm using currently
 #sudo apt-get install 
@@ -38,15 +38,8 @@ sudo dpkg -i google-chrome-stable_current_amd64.deb
 
 
 pip3 install chromaterm
-
-# Install ArcMenu
-# sudo apt install chrome-gnome-shell
-# sudo apt -y install gnome-shell-extension-arc-menu
-
-# git clone https://gitlab.com/arcmenu/ArcMenu.git
-# git clone --single-branch --branch gnome-3.36/3.38 https://gitlab.com/arcmenu/ArcMenu.git
-# cd ArcMenu
-# make install
+pip3 install selenium
+pip3 install boto3
 
 
 # Copy dot files
@@ -54,6 +47,9 @@ pip3 install chromaterm
 cp .vimrc ${HOME}
 cp .bashrc ${HOME}
 
+cp rssupdatescript.sh ${HOME}/scripts/rssupdatescript.sh
+cp rsssraper.py ${HOME}/Setup-script-3/rssscraper.py
+sudo chmod 777 ${HOME}/Setup-script-3/rssscraper.py
 
 # TODO install python packages
 
@@ -61,6 +57,7 @@ cp .bashrc ${HOME}
 sudo apt upgrade -y
 sudo apt autoremove -y
 
+echo "!!!!!!! Change user/password variable names in 'rssscraper.py'"
 echo " ______                        __         __          __ "
 echo "|      |.-----.--------.-----.|  |.-----.|  |_.-----.|  | "
 echo "|   ---||  _  |        |  _  ||  ||  -__||   _|  -__||__| "
