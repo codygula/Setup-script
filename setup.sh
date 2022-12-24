@@ -37,6 +37,7 @@ wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg -i google-chrome-stable_current_amd64.deb
 
 
+# Install Python packages
 pip3 install chromaterm
 pip3 install selenium
 pip3 install boto3
@@ -47,6 +48,8 @@ pip3 install boto3
 cp .vimrc ${HOME}
 cp .bashrc ${HOME}
 
+# For RSS Readers. Miniflux instance is the source of truth. Newsboat instance gets its feeds from Miniflux. 
+# Newsboat feed list is updated every time the "rss" command is entered. See aliases in .bashrc
 cp rssupdatescript.sh ${HOME}/scripts/rssupdatescript.sh
 cp rsssraper.py ${HOME}/Setup-script-3/rssscraper.py
 sudo chmod 777 ${HOME}/Setup-script-3/rssscraper.py

@@ -120,7 +120,10 @@ fi
 alias weather='curl wttr.in'
 alias pip='pip3'
 alias ssh='ct ssh'
-alias rss='newsboat'
+# runs script to scrap Miniflux instance for feeds.opml file, then opens newsboat.
+# For RSS Readers. Miniflux instance is the source of truth. Newsboat instance gets its feeds from Miniflux. 
+# Newsboat feed list is updated every time the "rss" command is entered. 
+alias rss= 'bash /home/gula/scripts/rssupdatescript.sh'
 
 # History control
 # don't use duplicate lines or lines starting with space
